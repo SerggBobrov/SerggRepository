@@ -1,0 +1,26 @@
+/* Оформление параграфов */
+body {
+	/*
+	background-color: #333333;
+	background-image: url(images/36.jpg);
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-position: left top;
+	*/
+	background:  url(images/36.jpg) #333333 repeat-x scroll left top; 
+}
+#page {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.strong-red {
+    margin-top: 400px;
+	font-weight: bold;
+    font-size: 22px;
+	color: red;
+    text-align: inherit;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 28px;
+    }
