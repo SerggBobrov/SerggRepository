@@ -116,12 +116,17 @@ body {
 	height: 65px;
 }
 
+#headernavigation ul li {
+	float: left;
+}
+
 #headernavigation ul li a {
 	color: black;
-	float: left;
 	font-family: "cuprum", sans-serif;
 	text-decoration: none;
 	padding: 0px 15px;
+	display: block;
+	height: 65px;
 	line-height: 65px;
 }
 
