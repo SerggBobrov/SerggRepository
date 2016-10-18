@@ -1,4 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 /* Оформление параграфов */
+
 body {
 	/*
 	background-color: #333333;
@@ -14,13 +60,72 @@ body {
 	margin: 0 auto;
 }
 
-.strong-red {
-    margin-top: 400px;
-	font-weight: bold;
+#header {
+    height: 270px;
+}
+
+#content {
+	width: 800px; height: 600px; float: left
+}
+
+#navigation {
+	width: 160px; height: 300px; float: right
+}
+
+#pit {
+	clear: both;
+}
+
+.text{
+    font-weight: bold;
     font-size: 22px;
 	color: red;
     text-align: inherit;
     text-decoration: none;
     text-transform: none;
     line-height: 28px;
+    font-family: 'Cuprum', sans-serif;
+    font-style: italic;
+    font-variant: small-caps
     }
+
+#list {
+	margin-left: 0px;
+}
+#list li {
+    margin-left: 20px;
+    height: auto;
+    width: 100px;
+    color:#f5f50c;
+    list-style-type: quare;
+    list-style-image: url(images/list.jpg);
+    list-style-position: inside;
+    border: 1px solid #fff;
+    padding: 5xp;
+        }
+#list li:hover {
+    background-color: azure;
+} 
+
+#list2 {
+	margin: o auto;
+	height: 160px;
+}
+
+#headernavigation {
+	height: 65px;
+}
+
+#headernavigation ul li a {
+	color: black;
+	float: left;
+	font-family: "cuprum", sans-serif;
+	text-decoration: none;
+	padding: 0px 15px;
+	line-height: 65px;
+}
+
+#headernavigation ul li a:hover {
+	background: red;
+	text-decoration: underline
+}
