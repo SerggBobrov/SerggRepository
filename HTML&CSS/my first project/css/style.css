@@ -58,22 +58,12 @@ body {
 #page {
 	width: 960px;
 	margin: 0 auto;
+	position: relative;
 }
 
 #header {
-    height: 270px;
-}
-
-#content {
-	width: 800px; height: 600px; float: left
-}
-
-#navigation {
-	width: 160px; height: 300px; float: right
-}
-
-#pit {
-	clear: both;
+    height: 204px;
+	position: relative;
 }
 
 .text{
@@ -89,9 +79,6 @@ body {
     font-variant: small-caps
     }
 
-#list {
-	margin-left: 0px;
-}
 #list li {
     margin-left: 20px;
     height: auto;
@@ -103,34 +90,95 @@ body {
     border: 1px solid #fff;
     padding: 5xp;
         }
+
 #list li:hover {
     background-color: azure;
 } 
 
-#list2 {
-	margin: o auto;
-	height: 160px;
-}
-
 #headernavigation {
 	height: 65px;
-}
+	}
 
 #headernavigation ul li {
 	float: left;
+	position: relative;
 }
 
 #headernavigation ul li a {
 	color: black;
+	padding: 0px 15px;
 	font-family: "cuprum", sans-serif;
 	text-decoration: none;
-	padding: 0px 15px;
 	display: block;
 	height: 65px;
 	line-height: 65px;
 }
 
 #headernavigation ul li a:hover {
-	background: red;
-	text-decoration: underline
+	background: #848383;
+	text-decoration: underline;
 }
+
+#headernavigation .dropdown {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    width: 150px;
+    background: #E2E2E2;
+    display: none;
+}
+
+#headernavigation li:hover .dropdown {
+    display: block;
+}
+
+#headernavigation .dropdown li {
+    width: 100%; 
+    height: 45px;
+}
+
+#headernavigation .dropdown li a 
+    line-height: 45px;
+    height: 45px;
+}
+
+.logo {
+	display: block;
+	position: absolute;
+	top: 42px;
+	left: 100px;
+}
+.search {
+	position: absolute;
+	top: 90px;
+	right: 0;
+}
+
+#main {
+    padding-top: 20px;   
+}
+
+#main:before,
+#main:after {
+  content:"";
+  display:table;
+}
+
+#main:after {
+  clear:both;
+}
+
+#main {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+#content {
+	width: 760px;
+	padding-left: 20px;
+	float: right;
+}
+
+#sidebar {
+	width: 180px;
+	float: left;
+	}

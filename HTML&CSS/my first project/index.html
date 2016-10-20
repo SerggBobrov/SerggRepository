@@ -1,4 +1,15 @@
 <!DOCTYPE HTML>
+<!-- 
+<div id="navigation">
+	<ul id="list">
+		<li>Пункт1</li>
+		<li>Пункт2</li>
+		<li>Пункт3</li>
+		<li>Пункт4</li>
+		<li>Пункт5</li>
+	</ul>
+</div>	
+-->
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -12,43 +23,49 @@
 	</head>
 	<body>
 		<div id=page>
-			<div id="header">
-							<div id="headernavigation">
-							<ul id="list2">
-								<li><a href="#">Пункт1</a></li>
-								<li>
-								<a href="#">Пункт2</a>
-									<ul class="dropdown">
-										<li><a href="#">Ссылка</a></li>
-										<li><a href="#">Ссылка</a></li>
-										<li><a href="#">Ссылка</a></li>
-										<li><a href="#">Ссылка</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Пункт3</a></li>
-								<li><a href="#">Пункт4</a></li>
-								<li><a href="#">Пункт5</a></li>
-								<li><a href="#">Пункт6</a></li>
-								<li><a href="#">Пункт7</a></li>
-							</ul>
-							</div>
+			<div id="headernavigation">
+				<ul>
+					<li><a href="#">Пункт1</a></li>
+					<li>
+						<a href="#">Пункт2</a>
+						<ul class="dropdown">
+							<li><a href="#">Ссылка1</a></li>
+							<li><a href="#">Ссылка2</a></li>
+							<li><a href="#">Ссылка3</a></li>
+							<li><a href="#">Ссылка4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Пункт3</a></li>
+					<li><a href="#">Пункт4</a></li>
+					<li><a href="#">Пункт5</a></li>
+					<li><a href="#">Пункт6</a></li>
+				</ul>
+			</div>
+			<div id="header">	
+				<a 
+				class="logo" href="#" name="Логотип" >
+					<img src="images/tut.jpeg"/>
+				</a>			
+				<form class="search">
+					<input type="text">
+					<input type="button" value="Поиск">
+				</form>
 			</div>
 			<div id="main">
 				<div id="content">
 								<p class="text">Одна из мыслей, которая поселилась в моей голове: должен ли frontend-разработчик быть в курсе всего? В общем смысле, frontend-разработчик может использоваться и на других рабочих местах. Вся команда разработчиков заканчивает разговор на frontend-разработчике. В этом смысл моей идеи. Frontend-разработчики создают те вещи, с которыми будут взаимодействовать люди. Все этапы разработки проходят вместе с frontend-разработчиком. Возможно, именно поэтому это такая забавная работа! Поскольку frontend-разработчик занимает центральное место в цепочке разработки, и при этом мы имеем дело с большим количеством разных специалистов, мы должны понимать их работу и иногда подсказывать, что и как сделать лучше. </p>
-				</div>	
-				<div id="navigation">
-							<ul id="list">
-								<li>Пункт1</li>
-								<li>Пункт2</li>
-								<li>Пункт3</li>
-								<li>Пункт4</li>
-								<li>Пункт5</li>
-							</ul>
-				</div>	
+				</div>
+				<div id="sidebar">
+				<ul>
+					<li>Пункт1</li>
+					<li>Пункт2</li>
+					<li>Пункт3</li>
+					<li>Пункт4</li>
+				</ul>				
+			</div>	
 			</div>
-			<div id=pit> 
-								Подвал
+						<div id=pit> 
+								<p>Авторские права</p>
 			</div>
 		</div>		
     </body>
